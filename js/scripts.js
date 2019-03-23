@@ -17,8 +17,7 @@ function triangle() {
     else if (length!==height && height!==hypotenuse && length!=hypotenuse) {
       alert("Scalene Triangle");
     }
-    else {
-      alert("error");
+    
     }
   }
   
