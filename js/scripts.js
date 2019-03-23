@@ -1,24 +1,24 @@
-function triangle(){
-  var a =prompt('input-one');
-  var b =prompt('input-two');
-  var c =prompt('input-three');
-  var side1=parseInt(a);
-  var side2=parseInt(b);
-  var side3=parseInt(c);
-  var myArray=[side1,side2,side3]
-
-
-  if(side1===side2&&side2===side3&&side1===side3){
-    alert("the triangle is equilateral")
+function triangle() {
+  var triangle = [length, height, hypotenuse];
+  var length = parseInt(document.getElementById("length").value);
+  var height = parseInt(document.getElementById("height").value);
+  var hypotenuse = parseInt(document.getElementById("hypotenuse").value);
+  
+  
+      if (length===height && height===hypotenuse && hypotenuse===length) {
+        alert("Equilateral Triangle");
+  }
+      else if (length===height || length===hypotenuse|| length===hypotenuse ) {
+        alert("Isosceles Triangle");
     }
-    else if(side1!==side2&&side2!==side3&&side3!==side1){
-    alert("the triangle is Scalene")
+    else if ((length+height)<=hypotenuse || (length+hypotenuse)<=height || (height+hypotenuse)<=length) {
+      alert("NOT a Triangle");
     }
-    else if(side1===side2&&side1!==side3||side2===side3&&side2!==side1||side1===side3&&side1!==side2&&side2+side1<side3&&side3+side2<side1&&side1+side3<side2){
-       alert("the triangle is isosceles")
+    else if (length!==height && height!==hypotenuse && length!=hypotenuse) {
+      alert("Scalene Triangle");
     }
-    else if(side2+side1<side3||side3+side2<side1||side1+side3<side2){
-    alert("it is not a triangle")
+    else {
+      alert("error");
     }
-    }
-    triangle();
+  }
+  
