@@ -12,44 +12,30 @@
   </div>
   <div class="tri-space">
     <form class="text">
-      First value: <input type="number" id="value1" />
-      <br>
-      Second value: <input type="number" id="value2" />
-      <br>
-      Third value: <input type="number" id="value3" />
-      <br>
-      <input class="style" type="button" onclick="triangle()" value="Enter" />
-      <br>
-    </form>
-    <p class="message" id="message"></p>
-    <hr width=50%>
-    <br>
-    <script type="text/javascript"></script>
-    <script type="text/javascript">
-      function triangle(){
-        var side1 = (parseInt(document.getElementById("value1").value));
-        var side2 = (parseInt(document.getElementById("value2").value));
-        var side3 = (parseInt(document.getElementById("value3").value));
-        var array= ["side1", "side2", "side3"];
-            if(side1==side2 && side2==side3 && side1==side3)
-            {
-            document.getElementById('message').innerHTML = "Your triangle is an EQUILATERAL";
-            }
-            else if(side1+side2<=side3 || side1+side3<=side2 || side2+side3<=side1){
-              document.getElementById('message').innerHTML="NOT TRIANGLE";
-      }
-            else if(side1==side2 || side2==side3 || side1==side3){
-              document.getElementById('message').innerHTML="This is an is an ISOSCELES triangle";
-      }
-            else if(side1!==side2!==side3){
-              document.getElementById('message').innerHTML="This is a SCALENE triangle";
-      }
-            else  {
-              document.getElementById('message').innerHTML="Enter valid values";
-              }
-      }
-   </script>
-   
+        <u>
+            <h1>The Triangle Tracker site</h1>
+            </u>
+            <p>This is a website that checks which type of a triangle you inqured and returns the result.</p>
+            <p>The three types of triangle you can come up with are:</p>
+           <ul>
+             <li>An <em>equilateral</strong> triangle with three equal sides.</em>
+             <li>An <em>isosceles</strong> triangle with at least two equal sides.</em>
+             <li>An <em>scalene</strong> triangle with no equal sides.</em>
+          </ul>
+          <p><em>If the sum of the lengths of any two sides of a triangle is less than or equal to the length of the third side, this CANNOT be a triangle hence NOT a triangle will be returned</em></p>
+          <u>
+            <h2>INPUT THE VALUES BELOW TO CHECK</h2>
+          </u>
+              <p>Key in the length <input type="text" id="length"></p>
+              <br>
+              <p>Key in the height <input type="text" id="height"></p>
+              <br>
+              <p>Key in the hypotenuse <input type="text" id="hypotenuse"></p>
+              <br>
+              <button onclick="triangleTracker()">Check</button>
+              <br>
+              <br>
+    
   </div>
 </body>
 
