@@ -4,3 +4,14 @@ h1{
 img{
   float: left;
 }
+body{
+  background-color:blue;
+}
+.text-box{
+  border: 5px solid black;
+  padding: 6px;
+  margin: 20px;
+  float: left;
+  opacity: 0.8;
+  background-color: white;
+}
