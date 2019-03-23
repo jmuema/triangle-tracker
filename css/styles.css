@@ -1,12 +1,4 @@
 h1{
-  font-style: inherit;
-  font-style: underline;
-  color: blue;
-  text-align: center;
+  color: Red
 }
-.tri-space{
-  text-align: center;
-  border: 5px solid black;
-  padding: 6px;
-  margin: 20px;
-}
+
