@@ -1,17 +1,21 @@
 # Triangle-Tracker
-First here is a link to a live site: https://jmuema.github.io/triangle-tracker/ 
- ## BDD
- Specification: Triangle Tracker
-  Input triangle sides then check whether sides make up a triangle.
-  If a triangle is formed, the program will calculate what type of triangle it is.
-  The program then returns the result as an alert!
-  If a triangle is not formed, the program returns NOT A TRIANGLE.
-#### A site that allows the user to key in the lengths of the sides of a triangle, and returns whether these sides form an equilateral, isosceles, or scalene triangle or if the sides cannot make a triangle at all.
+First here is a link to a live site:https://jmuema.github.io/triangle-tracker/
 #### By **Joseph Muema Mwangangi**
 ## Description
 This site allows a user to key in the lengths of the sides of a triangle, and it returns whether these sides form an equilateral, isosceles, or scalene triangle or if the sides cannot make a triangle at all.
 ## Setup/Installation Requirements
 All that you need is internet. No need of setup.
+## BEHAVIOR-DRIVEN DEVELOPMENT
+  BEHAVIOR                           | INPUT EXAMPLE | OUTPUT EXAMPLE |
+-------------------------------------|---------------|----------------|
+  It is not a triangle               | a+b<c         | Not a triangle |
+-------------------------------------|---------------|----------------|
+  A triangle that has equal sides    | a=b=c         | Equilateral    |
+-------------------------------------|---------------|----------------|
+  A triangle that has two equal sides| a=b b=c c=a   | Isosceles      |
+-------------------------------------|---------------|----------------|
+  A triangle that has no equal sides | a!==b!==c     | Scalene        |
+-------------------------------------|---------------|----------------|
 ## Known Bugs
 No known bugs.
 ## Technologies Used
@@ -20,8 +24,7 @@ This page was made by the use of HTML, CSS styling and JavaScript.
 More information email me: Jmuema95@gmail.com.
 ### License
 MIT License
-
-Copyright (c) [2019] [Joseph Muema]
+Copyright (c) [2019] [Joseph Muema Mwangangi]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -39,4 +42,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+SOFTWARE.  
