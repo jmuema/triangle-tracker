@@ -6,18 +6,18 @@ function triangle() {
 
 
   if (length === height && height === hypotenuse && hypotenuse === length) {
-    alert("Equilateral Triangle");
+    output.innerHTML = ("Equilateral Triangle")
   }
   else if (length === height || length === hypotenuse || length === hypotenuse) {
-    alert("Isosceles Triangle");
+    output.innerHTML = ("Isosceles Triangle")
   }
   else if ((length + height) <= hypotenuse || (length + hypotenuse) <= height || (height + hypotenuse) <= length) {
-    alert("NOT a Triangle");
+    output.innerHTML = ("NOT a Triangle")
   }
   else if (length !== height && height !== hypotenuse && length != hypotenuse) {
-    alert("Scalene Triangle");
+    output.innerHTML = ("Scalene Triangle")
   }
   else {
-    alert("error");
+    output.innerHTML = ("error");
   }
 }
